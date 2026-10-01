@@ -1,0 +1,9 @@
+source-wsq/
+source-drive/
+assessment/
+.DS_Store
+~$*
+__pycache__/
+*.pyc
+.env
+build/inspect/

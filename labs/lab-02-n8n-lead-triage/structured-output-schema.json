@@ -1,0 +1,13 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["category", "urgency", "confidence", "rationale", "next_action"],
+  "properties": {
+    "category": {"type": "string", "enum": ["sales", "support", "partnership", "other"]},
+    "urgency": {"type": "string", "enum": ["low", "medium", "high"]},
+    "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+    "rationale": {"type": "string"},
+    "next_action": {"type": "string", "enum": ["QUEUE", "HUMAN_REVIEW"]}
+  }
+}
+
